@@ -11,17 +11,35 @@ I’m a finance and strategy professional with experience in healthcare and life
 
 ## Education
 
+{% capture haas_education %}
 ### University of California, Berkeley — Haas School of Business
 
 **MBA and MPH, concurrent degree program** · Expected December 2027
 
 Haas Healthcare Association (VP Careers); Asian Business Club (VP External Relations); Haas Japan Trek co-lead. Completed semester-long consulting projects for an international eye-care nonprofit and a pre-commercial biotech startup.
+{% endcapture %}
+{% include organization-entry.html logo="/assets/logos/uc-berkeley-seal.png" content=haas_education %}
 
+{% capture berkeley_education %}
 ### University of California, Berkeley
 
 **Bachelor of Arts in Public Health** · December 2020
+{% endcapture %}
+{% include organization-entry.html logo="/assets/logos/uc-berkeley-seal.png" content=berkeley_education %}
 
-Semester exchange programs at Fudan University in Shanghai and Hitotsubashi University in Tokyo.
+{% capture fudan_education %}
+### Fudan University
+
+Semester exchange program · Shanghai
+{% endcapture %}
+{% include organization-entry.html initials="FU" content=fudan_education %}
+
+{% capture hitotsubashi_education %}
+### Hitotsubashi University
+
+Semester exchange program · Tokyo
+{% endcapture %}
+{% include organization-entry.html initials="HT" content=hitotsubashi_education %}
 
 ## Skills
 

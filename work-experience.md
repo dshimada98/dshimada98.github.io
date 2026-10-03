@@ -7,6 +7,7 @@ permalink: /work-experience/
 
 # Work Experience
 
+{% capture inkspace_experience %}
 ## InkSpace Imaging
 
 **Finance and Strategy Associate** · June 2026–Present  
@@ -16,7 +17,10 @@ Medtech startup selling body-conforming MRI coils designed to improve imaging qu
 
 - Led investor targeting for a **$20M Series B**: assessed 350+ investors, prioritized 51, and sourced 12 CEO-level investor discussions that progressed through multiple rounds of diligence, nearly doubling engagement versus the prior year.
 - Assessed European market entry by sizing installed base, OEM share, pricing, and policy movements. Identified six priority countries and developed benchmarks informing distributor negotiations.
+{% endcapture %}
+{% include organization-entry.html logo="/assets/logos/inkspace-imaging.png" content=inkspace_experience %}
 
+{% capture astrazeneca_experience %}
 ## AstraZeneca K.K.
 
 **Senior Analyst, Financial Planning and Analysis** · 2023–2025  
@@ -36,10 +40,15 @@ Tokyo, Japan
 - Led a cross-functional effort to replace disparate manual performance reports with a customizable automated dashboard adopted by 3,000+ users.
 - Helped implement AI-driven sales forecasting for finance and insights teams, reducing workload by approximately 75 hours per year for both teams.
 - Provided weekly coaching to a junior FP&A analyst on presentation creation, modeling, and system management; the analyst was selected as successor for the role.
+{% endcapture %}
+{% include organization-entry.html logo="/assets/logos/astrazeneca-mark.png" content=astrazeneca_experience %}
 
+{% capture lek_experience %}
 ## L.E.K. Consulting
 
 **Summer Analyst** · July–August 2020  
 Tokyo, Japan
 
 - Managed a multi-country patient-funnel model for a pharmaceutical company entering the Asia-Pacific market for hereditary angioedema prophylaxis, estimating eligible patient populations to support commercial assessment.
+{% endcapture %}
+{% include organization-entry.html logo="/assets/logos/lek-consulting-wordmark.jpg" content=lek_experience %}
