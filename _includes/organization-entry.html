@@ -1,0 +1,12 @@
+<article class="organization-entry">
+  <div class="organization-entry__mark" aria-hidden="true">
+    {% if include.logo %}
+      <img src="{{ include.logo | relative_url }}" alt="" loading="lazy" decoding="async">
+    {% else %}
+      <span class="organization-entry__initials">{{ include.initials | escape }}</span>
+    {% endif %}
+  </div>
+  <div class="organization-entry__content">
+    {{ include.content | markdownify }}
+  </div>
+</article>

@@ -9,6 +9,7 @@ permalink: pretty
 exclude:
   - attached_assets
   - PLAN.md
+  - Change1.md
   - README.md
   - Gemfile
   - Gemfile.lock
