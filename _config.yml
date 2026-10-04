@@ -10,6 +10,7 @@ exclude:
   - attached_assets
   - PLAN.md
   - Change1.md
+  - change2.md
   - README.md
   - Gemfile
   - Gemfile.lock
