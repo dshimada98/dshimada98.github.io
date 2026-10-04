@@ -32,14 +32,14 @@ Haas Healthcare Association (VP Careers); Asian Business Club (VP External Relat
 
 Semester exchange program · Shanghai
 {% endcapture %}
-{% include organization-entry.html initials="FU" content=fudan_education %}
+{% include organization-entry.html logo="/assets/logos/fudan-university.jpg" content=fudan_education %}
 
 {% capture hitotsubashi_education %}
 ### Hitotsubashi University
 
 Semester exchange program · Tokyo
 {% endcapture %}
-{% include organization-entry.html initials="HT" content=hitotsubashi_education %}
+{% include organization-entry.html logo="/assets/logos/hitotsubashi-university.jpg" content=hitotsubashi_education %}
 
 ## Skills
 
