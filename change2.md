@@ -1,6 +1,6 @@
 # Change 2: Interactive timelines for work and education
 
-**Status:** Draft — review before implementation
+**Status:** Implemented — verified in local Preview
 
 ## Goal
 
@@ -47,10 +47,10 @@ Make the Work Experience and Education sections easier to explore by organizing 
 - **Content integrity:** Existing facts and local logo assets are preserved. Missing dates are not guessed.
 - **Publishing:** The Jekyll build includes the updated pages but does not publish this planning document.
 
-## Open decisions before implementation
+## Assumptions carried into implementation
 
-- The Fudan and Hitotsubashi exchange entries currently have no dates. Provide the terms/years if they should appear in exact chronological order; otherwise they will remain undated and keep their current relative order.
-- This draft interprets “click my mouse over the logo” as click/tap to open the details, with hover used only for visual emphasis. Confirm if you intended hover itself to open the card.
+- The Fudan and Hitotsubashi exchange entries have no dates in the current content, so they remain undated and keep their existing relative order. No dates will be inferred.
+- Click or tap opens the details; hover only highlights the logo. The timeline remains usable without hover.
 
 ## Non-goals
 
