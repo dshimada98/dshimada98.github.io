@@ -1,12 +1,23 @@
-<article class="organization-entry">
-  <div class="organization-entry__mark" aria-hidden="true">
-    {% if include.logo %}
-      <img src="{{ include.logo | relative_url }}" alt="" loading="lazy" decoding="async">
-    {% else %}
-      <span class="organization-entry__initials">{{ include.initials | escape }}</span>
-    {% endif %}
-  </div>
-  <div class="organization-entry__content">
-    {{ include.content | markdownify }}
-  </div>
-</article>
+<li class="organization-entry">
+  <details class="organization-entry__disclosure" data-timeline-entry>
+    <summary class="organization-entry__summary" aria-controls="{{ include.id | append: '-details' | escape }}">
+      <span class="organization-entry__mark" aria-hidden="true">
+        {% if include.logo %}
+          <img src="{{ include.logo | relative_url }}" alt="" loading="lazy" decoding="async">
+        {% else %}
+          <span class="organization-entry__initials">{{ include.initials | escape }}</span>
+        {% endif %}
+      </span>
+      <span class="organization-entry__summary-copy">
+        {% if include.timeline_date %}
+          <span class="organization-entry__date">{{ include.timeline_date | escape }}</span>
+        {% endif %}
+        <span class="organization-entry__name">{{ include.name | escape }}</span>
+      </span>
+      <span class="organization-entry__indicator" aria-hidden="true"></span>
+    </summary>
+    <div id="{{ include.id | append: '-details' | escape }}" class="organization-entry__content">
+      {{ include.content | markdownify }}
+    </div>
+  </details>
+</li>

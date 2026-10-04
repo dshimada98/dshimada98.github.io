@@ -3,9 +3,12 @@ layout: default
 title: Work Experience
 description: Selected roles and accomplishments in healthcare finance, strategy, and life sciences consulting.
 permalink: /work-experience/
+interactive_timeline: true
 ---
 
 # Work Experience
+
+<ol class="organization-timeline" data-timeline-group aria-label="Work experience timeline">
 
 {% capture inkspace_experience %}
 ## InkSpace Imaging
@@ -18,7 +21,7 @@ Medtech startup selling body-conforming MRI coils designed to improve imaging qu
 - Led investor targeting for a **$20M Series B**: assessed 350+ investors, prioritized 51, and sourced 12 CEO-level investor discussions that progressed through multiple rounds of diligence, nearly doubling engagement versus the prior year.
 - Assessed European market entry by sizing installed base, OEM share, pricing, and policy movements. Identified six priority countries and developed benchmarks informing distributor negotiations.
 {% endcapture %}
-{% include organization-entry.html logo="/assets/logos/inkspace-imaging.png" content=inkspace_experience %}
+{% include organization-entry.html id="work-inkspace" name="InkSpace Imaging" timeline_date="June 2026–Present" logo="/assets/logos/inkspace-imaging.png" content=inkspace_experience %}
 
 {% capture astrazeneca_experience %}
 ## AstraZeneca K.K.
@@ -41,7 +44,7 @@ Tokyo, Japan
 - Helped implement AI-driven sales forecasting for finance and insights teams, reducing workload by approximately 75 hours per year for both teams.
 - Provided weekly coaching to a junior FP&A analyst on presentation creation, modeling, and system management; the analyst was selected as successor for the role.
 {% endcapture %}
-{% include organization-entry.html logo="/assets/logos/astrazeneca-mark.png" content=astrazeneca_experience %}
+{% include organization-entry.html id="work-astrazeneca" name="AstraZeneca K.K." timeline_date="2021–2025" logo="/assets/logos/astrazeneca-mark.png" content=astrazeneca_experience %}
 
 {% capture lek_experience %}
 ## L.E.K. Consulting
@@ -51,4 +54,6 @@ Tokyo, Japan
 
 - Managed a multi-country patient-funnel model for a pharmaceutical company entering the Asia-Pacific market for hereditary angioedema prophylaxis, estimating eligible patient populations to support commercial assessment.
 {% endcapture %}
-{% include organization-entry.html logo="/assets/logos/lek-consulting-wordmark.jpg" content=lek_experience %}
+{% include organization-entry.html id="work-lek" name="L.E.K. Consulting" timeline_date="July–August 2020" logo="/assets/logos/lek-consulting-wordmark.jpg" content=lek_experience %}
+
+</ol>
